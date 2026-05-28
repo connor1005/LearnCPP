@@ -1,4 +1,4 @@
-template <typename T> requires std::floatingpoint<T>
+template <typename T> requires std::floating_point<T>
 
 scores.erase(scores.begin());
 
@@ -8,6 +8,7 @@ virtual ~Base () {}
 
 for (const auto& i : inventory){ std::cout << i << std::endl;}
 
+
 try{
     //random shit that probably won't work lol
 }
@@ -15,6 +16,7 @@ catch(const std::runtime_error& e){
     std::cout << e.what() << std::endl;
 }
 
+
 fleet.push_back(std::move(ship));
 
-std::unique_ptr<Animal> pet = std::make_unique<Dog>();
+std::unique_ptr<Animal> olive = std::make_unique<Dog>();
